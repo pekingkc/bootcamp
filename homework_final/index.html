@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+<script>
+// for show first bg, show black rect
+	
+
+	var hollowbtn = function(){
+		var showSWB = document.getElementById("bg_white");
+		showSWB.style.visibility = "visible";
+		var easebg_white = document.getElementById("bg_white");
+		easebg_white.style.opacity = "100";
+		var showBR = document.getElementById("rect_b");
+		showBR.style.visibility = "visible";
+	}
+// show the copywrite
+	var showCW = function(){
+		var cw = document.getElementById("copywrite");
+		cw.style.visibility = "visible";
+		// var easecopywrite = document.getElementById("copywrite");
+		// easecopywrite.style.opacity = "100";
+		var showBG = document.getElementById("bg_b");
+		showBG.style.visibility = "visible";
+		var easebg_b = document.getElementById("bg_b");
+		easebg_b.style.opacity = "100";
+		var hideRB = document.getElementById("rect_b");
+		hideRB.style.visibility = "hidden";
+	}
+// show triangle
+	var showTri = function(){
+		var ST = document.getElementById("triangle");
+		ST.style.visibility = "visible";
+		var easetriangle = document.getElementById("triangle");
+		easetriangle.style.opacity = "100";
+		var HCR = document.getElementById("copywrite");
+		HCR.style.visibility = "hidden";
+	}
+// show nohollow and hide triangle
+	var showNohollow = function(){
+		var SNH = document.getElementById("nohollow");
+		SNH.style.visibility = "visible";
+		var easenohollow = document.getElementById("nohollow");
+		easenohollow.style.opacity = "100";
+		var showCov = document.getElementById("wrapper_cover");
+		showCov.style.visibility = "visible";
+		var HTri = document.getElementById("triangle");
+		HTri.style.visibility = "hidden";
+		var SLA = document.getElementById("triLink");
+		SLA.style.visibility = "visible";
+	}
+// clean the triangles, and the "easylost"
+	var cleanTri = function(){
+		var HTs = document.getElementById("nohollow");
+		HTs.style.visibility = "hidden";
+		var showCir = document.getElementById("circle");
+		showCir.style.visibility = "visible";
+		var easecircle = document.getElementById("circle");
+		easecircle.style.opacity = "100";
+		var hideEL = document.getElementById("easylost");
+		hideEL.style.visibility = "hidden";
+		var hide_triLink = document.getElementById("triLink");
+		hide_triLink.style.visibility = "hidden";
+	}
+// mouseover the left right triangle, then
+	var showeasylost = function(){
+		var showEL = document.getElementById("easylost");
+		showEL.style.visibility = "visible";
+	}
+// mouseover the circle, to show "cw_crazy"
+	var showcrazy = function(){
+		var showCra = document.getElementById("cw_crazy");
+		showCra.style.visibility = "visible";
+	}
+// the circle onclick, hide, then glitch 4 bgs
+	var cirClick = function(){
+//for hide and visible
+		var showCra = document.getElementById("cw_crazy");
+		showCra.style.visibility = "hidden";
+		var showbgc1 = document.getElementById("bgc1");
+		showbgc1.style.visibility = "visible";
+		var showgla = document.getElementById("glamour");
+		showgla.style.visibility = "visible";
+		var easeglamour = document.getElementById("glamour");
+		easeglamour.style.opacity = "100";
+//for glitching
+		interval = setInterval(function(){
+			bgColorRed = Math.round(Math.random() * 255);
+			bgColorGreen = Math.round(Math.random() * 255);
+			bgColorBlue = Math.round(Math.random() * 255);
+			var glitchbgc1 = document.getElementById("bgc1");
+			glitchbgc1.style.cssText = 'background-color: rgb('+bgColorRed+','+bgColorGreen+','+bgColorBlue+');'	
+			var glitchbgc2 = document.getElementById("bgc2");
+			glitchbgc2.style.cssText = 'background-color: rgb('+bgColorRed+50+','+bgColorGreen+','+bgColorBlue+');'	
+			var glitchbgc3 = document.getElementById("bgc3");
+			glitchbgc3.style.cssText = 'background-color: rgb('+bgColorRed+','+bgColorGreen+100+','+bgColorBlue+');'
+			var glitchbgc4 = document.getElementById("bgc4");
+			glitchbgc4.style.cssText = 'background-color: rgb('+bgColorRed+','+bgColorGreen+','+bgColorBlue+50+');'	
+		},100);
+	}
+//hide all and to the beginning	
+	var hideall = function(){
+		var hidebgc = document.getElementById("wrapper");
+		hidebgc.style.visibility = "hidden";
+		var hide_glamour = document.getElementById("glamour");
+		hide_glamour.style.visibility = "hidden";
+		var hide_circle = document.getElementById("circle");
+		hide_circle.style.visibility = "hidden";
+		var hide_bg_b = document.getElementById("bg_b");
+		hide_bg_b.style.visibility = "hidden";
+		var hide_bg_white = document.getElementById("bg_white");
+		hide_bg_white.style.visibility = "hidden";
+		var hide_cov1 = document.getElementById("cov1");
+		hide_cov1.style.visibility = "hidden";
+
+		var hide_cov2 = document.getElementById("cov2");
+		hide_cov2.style.visibility = "hidden";
+		var hide_cov3 = document.getElementById("cov3");
+		hide_cov3.style.visibility = "hidden";
+		var hide_cov4 = document.getElementById("cov4");
+		hide_cov4.style.visibility = "hidden";
+		var hide_cov5 = document.getElementById("cov5");
+		hide_cov5.style.visibility = "hidden";
+		var hide_cov7 = document.getElementById("cov7");
+		hide_cov7.style.visibility = "hidden";
+		var hide_cov8 = document.getElementById("cov8");
+		hide_cov8.style.visibility = "hidden";
+		var hide_cov9 = document.getElementById("cov9");
+		hide_cov9.style.visibility = "hidden";
+	}
+</script>
+
+</head>
+<body>
+
+
+<!--   	cloud background -->
+<!-- 	<div id="screenbg">
+		<img src="data/Blue_Clouds.jpg"/>
+	</div> -->
+
+
+<!-- first page -->
+	<div id="cw_hollowness">
+		<img src="data/cw_hollowness.png"/>
+	</div>
+
+	<a href="#" onclick="hollowbtn()" onmouseover="onmouse_hollowCircle()">
+	  	<div id = "hollowCircle">
+	  	</div>
+	</a>
+
+
+
+<!-- second white background -->
+  	<div id="bg_white" style="visibility:hidden">
+  	</div>
+
+<!-- second page -->
+<!-- black rect -->
+	<div id="bg_b" class="allin" style="visibility:hidden">
+	</div>
+
+	<a href="#" onmouseover="showCW()">
+		<div id="rect_b" class="allin" style="visibility:hidden">
+			<img src="data/rect.png" id="rect"/>
+		</div>
+	</a>
+<!-- the gif copywrite -->
+	<a href="#" onclick="showTri()">
+		<div id="copywrite" class="allin" style="visibility:hidden">
+			<img src="data/cw.gif" id="cw_png"/>
+		</div>
+	</a>
+
+
+<!-- third page -->
+<!-- the triangle, at the right top corner -->
+	<a href="#" onmouseover="showNohollow()">
+		<div id="triangle" class="allin" style="visibility:hidden">
+			<img src="data/triangle.png" id="tri_pic"/>
+		</div>
+	</a>
+<!-- nohollow, means a lot of triangles -->
+	<div id="nohollow" class="allin" style="visibility:hidden">
+		<img src="data/nohollow.png" id="nohollow_pic"/>
+	</div>
+
+<!-- squares to cover triangles -->
+	<div id="wrapper_cover" style="visibility:hidden">
+		<div id="cov1">
+		</div>
+		<div id="cov2">
+		</div>
+		<div id="cov3">
+		</div>
+		<div id="cov4">
+		</div>
+		<div id="cov5">
+		</div>
+		<div id="cov7">
+		</div>
+		<div id="cov8">
+		</div>
+		<div id="cov9">
+		</div>
+	</div>
+
+<!-- the left-middle tirangle link area -->
+	<a href="#" onclick="cleanTri()" onmouseover="showeasylost()" style="visibility:hidden">
+		<div id="triLink" class="allin">
+		</div>
+	</a>
+	
+
+	<!-- <a href="#" onclick="cleanTri()" style="visibility:hidden"> -->
+		<div id="easylost" class="allin" style="visibility:hidden">
+			<img src="data/wr_easylost.gif"/>
+		</div>
+	<!-- </a> -->
+
+<!-- fouth page -->
+<!-- the circle in the middle -->
+	<a href="#" onclick="cirClick()" onmouseover="showcrazy()">
+		<div id="circle" class="allin" style="visibility:hidden">
+			<img src="data/circle.png"/>
+		</div>
+	</a>
+
+	<div id="cw_crazy" class="allin" style="visibility:hidden">
+		<img src="data/makecrazy.gif"/>
+	</div>
+
+<!-- the four background tint -->
+	<div id="wrapper">
+		<div id="bgc1" class="allin" style="visibility:hidden">
+		</div>
+
+		<div id="bgc2" class="allin" style="visibility:hidden">
+		</div>
+
+		<div id="bgc3" class="allin" style="visibility:hidden">
+		</div>
+
+		<div id="bgc4" class="allin" style="visibility:hidden">
+		</div>
+	</div>
+	<a href="#" onclick="hideall();">
+		<div onclick="hideall()" id="glamour" class="allin" style="visibility:hidden">
+			<img src="data/glamour.gif"/>
+		</div>
+	</a>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

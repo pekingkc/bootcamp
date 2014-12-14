@@ -1,0 +1,300 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	font-family: Arial;
+	background: url("data/Blue_Clouds.jpg") no-repeat center center fixed;
+/*	background-size: 100%;*/
+	background-size: cover;
+    -webkit-background-size: cover;
+    
+}
+
+/*#screenbg{
+	width: 100%;
+	height: 100%;
+}*/
+
+/*first page*/
+#hollowCircle{
+	/*background-color: red;*/
+	border-style: solid;
+	border-color: black;
+	border-width:8px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 120px;
+	height: 120px;
+	border-radius: 120px;
+	transform:translate(-68px, -120px);
+	/*transition-property: rotate;
+	transition-property: border-radius;
+	transition-duration:0.5s;
+	transform-origin:center center;*/
+}
+
+#cw_hollowness{
+	position: fixed;
+	left: 50%;
+	top: 50%; 
+	transform:translate(-150px, 30px);
+}
+
+/*#hollowCopy{
+	font-size:24px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+}*/
+
+/*second page*/
+#bg_white{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	transition-property: opacity;
+	transition-duration:0.5s;
+	opacity: 0;
+}
+
+#bg_b{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	transition-property: opacity;
+	transition-duration:0.5s;
+	opacity: 0;
+}
+
+#rect_b{
+	position: fixed;
+	left: 50px;
+	top: 50%;
+	/*transform:translate(0px, 5px);*/
+}
+
+#copywrite{
+	position: fixed;
+	left: 38%;
+	top: 43%;
+	transition-delay:0.3s;
+	/*transition-property: opacity;
+	transition-duration:0.5s;
+	opacity: 0;*/
+	
+}
+
+
+/*third page*/
+/*triangle at the top -right corner*/
+#triangle{
+	position: fixed;
+	right: 220px;
+	top: 20px;
+	transition-delay:0.3s;
+	transition-property: opacity;
+	transition-duration:0.5s;
+	opacity: 0;
+}
+/*triangles in the screen*/
+#nohollow{
+	position: fixed;
+	right: 200px;
+	top: 0px;
+	transition-property: opacity;
+	transition-duration:1s;
+	opacity: 0;
+}
+/*the left-middle tirangle link area*/
+#triLink{
+	position: fixed;
+	right: 214px;
+	top: 320px;
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+}
+
+/*the triangle covers*/
+#cov1{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right:214px;
+	top: 10px;
+	opacity: 0;
+}
+#cov1:hover{
+	opacity: 1;
+}
+#cov2{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right:674px;
+	top: 10px;
+	opacity: 0;
+}
+#cov2:hover{
+	opacity: 1;
+}
+#cov3{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right:1134px;
+	top: 10px;
+	opacity: 0;
+}
+#cov3:hover{
+	opacity: 1;
+}
+#cov4{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right:1134px;
+	top: 321px;
+	opacity: 0;
+}
+#cov4:hover{
+	opacity: 1;
+}
+#cov5{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right:674px;
+	top: 321px;
+	opacity: 0;
+}
+#cov5:hover{
+	opacity: 1;
+}
+#cov7{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right:1134px;
+	top: 640px;
+	opacity: 0;
+}
+#cov7:hover{
+	opacity: 1;
+}
+#cov8{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right:214px;
+	top: 640px;
+	opacity: 0;
+}
+#cov8:hover{
+	opacity: 1;
+}
+#cov9{
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right:674px;
+	top: 640px;
+	opacity: 0;
+}
+#cov9:hover{
+	opacity: 1;
+}
+
+
+#easylost{
+	position: fixed;
+	right: 270px;
+	top: 200px;%
+}
+
+/*the fouth page*/
+#circle{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform:translate(-15px, -15px);
+	transition-property: opacity;
+	transition-duration:1s;
+	opacity: 0;
+}
+
+#cw_crazy{
+	position: fixed;
+	left: 52%;
+	top: 40%;
+}
+
+#bgc1{
+	position: fixed;
+	right: 0%;
+	width: 25%;
+	height: 100%;
+	background-color: red;
+}
+
+#bgc2{
+	position: fixed;
+	right: 25%;
+	width: 25%;
+	height: 100%;
+	background-color: yellow;
+}
+
+#bgc3{
+	position: fixed;
+	right: 50%;
+	width: 25%;
+	height: 100%;
+	background-color: blue;
+}
+
+#bgc4{
+	position: fixed;
+	right: 75%;
+	width: 25%;
+	height: 100%;
+	background-color: green;
+}
+
+#glamour{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform:translate(-160px, -10px);
+
+	transition-property: opacity;
+	transition-duration:1s;
+	opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
